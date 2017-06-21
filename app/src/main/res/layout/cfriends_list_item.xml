@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yifeng.logistics.layout.SwipeListLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.yifeng.logistics.layout.CustomImageView
+            android:id="@+id/head_Img"
+            android:layout_width="40dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这里显示时间"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/Name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="业代姓名"
+                android:textColor="@color/blues"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/com_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="这里显示感言"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <com.yifeng.logistics.layout.NineGridlayout
+                android:id="@+id/iv_ngrid_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:horizontalSpacing="2.5dp"
+                android:verticalSpacing="2.5dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_Media"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/mediao" />
+
+                <TextView
+                    android:id="@+id/media_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/img_Media"
+                    android:text="55" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/discuss_txt"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/im_susimg_id"
+                    android:background="@drawable/button_shape_gray_fragment"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/digBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="赞"
+                        android:textColor="#d2d2d2" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#707070" />
+
+                    <TextView
+                        android:id="@+id/commentBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="评论"
+                        android:textColor="#d2d2d2" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/im_susimg_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/im_snsimg" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/like_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/iconlike" />
+
+                <TextView
+                    android:id="@+id/like_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/blue"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/digCommentBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/im_distribute_comm_bg"
+                android:minHeight="10dip"
+                android:orientation="vertical"
+                android:paddingBottom="8dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="12dip"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/discussList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#00000000"></ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/weak_white" />
+
+</com.yifeng.logistics.layout.SwipeListLayout>

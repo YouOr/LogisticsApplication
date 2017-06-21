@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:switch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="设置"
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/ll_locationTime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        >
+    <TextView
+        android:id="@+id/left_one_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:text="勿扰时间段"
+        />
+        <TextView
+            android:id="@+id/center_one_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/left_one_title"
+            android:textSize="18dp"
+            android:text=""
+            />
+        <com.yifeng.logistics.layout.Switch
+            android:id="@+id/sh_StateThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            switch:checked="false"
+            switch:duration="250"
+            switch:spotOffColor="#e0e0e0"
+            switch:switchOffColor="#ffffff"
+            switch:switchOffStrokeColor="#000000"
+            switch:spotPadding="2dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_exit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:text="退出登录"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

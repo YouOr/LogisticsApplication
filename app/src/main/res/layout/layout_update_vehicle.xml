@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_top_title"/>
+    <RelativeLayout
+        android:id="@+id/login_usernamelinear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/login_usernameTv"
+        android:background="@drawable/edittext_shape_gray"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:id="@+id/et_Vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/img_delete"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="15dp"
+            android:textColor="@color/text_font_black_light"
+            />
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+</LinearLayout>

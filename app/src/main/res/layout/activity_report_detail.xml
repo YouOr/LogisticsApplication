@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_title" />
+
+    <EditText
+        android:id="@+id/detail_Testimonials"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_shape_black"
+        android:gravity="top|left"
+        android:hint="发布信息"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/text_font_black"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/img_top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picSkuName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/photoImgBtn1"
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:layout_weight="1"
+            android:src="@drawable/addimg" />
+
+        <ImageView
+            android:id="@+id/photoImgBtn2"
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/addimg"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/photoImgBtn3"
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/addimg"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/img_top2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_top1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/photoImgBtn4"
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:layout_weight="1"
+            android:src="@drawable/addimg"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/photoImgBtn5"
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/addimg"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/photoImgBtn6"
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/addimg"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/img_top3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_top2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/photoImgBtn7"
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:layout_weight="1"
+            android:src="@drawable/addimg"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/photoImgBtn8"
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/addimg"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/photoImgBtn9"
+            android:layout_width="0dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/addimg"
+            android:visibility="invisible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_bofang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:text="试听"
+            />
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/btn_luyin"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white"
+            android:text="按住录音"
+            />
+</LinearLayout>
+
+
